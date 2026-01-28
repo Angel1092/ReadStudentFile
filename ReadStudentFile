@@ -1,0 +1,27 @@
+// Angel Guerra (angel.guerra@malad.us)
+// For CTE Software Development 2
+// Instructor: Mr. Gross
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class ReadStudentFile {
+    public static void main(String[] args) throws FileNotFoundException {
+
+        File file = new File("students.txt");
+        Scanner input = new Scanner(file);
+
+        // This is so we know there are exactly three lines
+        String line1 = input.nextLine();
+        String line2 = input.nextLine();
+        String line3 = input.nextLine();
+
+        // This will output to the console
+        System.out.println(line1);
+        System.out.println(line2);
+        System.out.println(line3);
+
+        input.close();
+    }
+}
